@@ -18,8 +18,7 @@ if(buttonText == this.props.quiz_question.answer){
         </section>
         <section className="buttons">
           <ul>
-            {this.props.quiz_question.answer_options
-            .map((answer_option,index)=>
+            {this.props.quiz_question.answer_options.map((answer_option,index)=>
             {
              return <QuizQuestionButton
                 button_text={answer_option} key={index} clickHandler={this.handleClick.bind(this)}
